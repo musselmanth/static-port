@@ -1,0 +1,135 @@
+body {
+  font-family: 'Lexend', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  background-color: #444444;
+  margin: 1rem;
+  height: calc(100vh - 2rem);
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #222222;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.titletext {
+  padding-bottom: 1rem;
+}
+
+.title:hover {
+  color: #DDDDDD;
+}
+
+.titletext h1, h3 {
+  padding: 0;
+  padding-top: 0.2rem;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-grow:3;
+  padding: 1rem;
+}
+
+.nav-button {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-bottom: 4px solid #333333;
+}
+
+.nav-button:hover {
+  background-color: #333333;
+}
+
+.active-btn {
+  background-color: #333333;
+}
+
+.ctr-btn {
+  margin-left: 4px;
+}
+
+.rght-btn {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.social-btn {
+  width: 2rem;
+  padding-top: 0.5rem;
+}
+
+.social-btn svg {
+  fill: #eeeeee;
+}
+
+.social-btn svg:hover {
+  fill: #dddddd;
+}
+
+.page {
+  background-color: #333333;
+  flex-grow: 1;
+  border-right: 1rem solid #222222;
+  border-bottom-right-radius: 1rem;
+}
+
+.headshot {
+  width: 6.5rem;
+  height: 6.5rem;
+  padding: 1rem;
+  border-radius: 18%;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.page-content {
+  padding-left: 2rem;
+  z-index: 10;
+}
+
+.page-content a {
+  color: white;
+}
+
+#bg-canv {
+  z-index: 8;
+  position:fixed;
+  width: calc(100% - 3rem);
+  height: calc(100% - 10.5rem);
+}
+
+
+
+
