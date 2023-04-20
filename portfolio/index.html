@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is a simple static portfolio website for Tom Musselman - Software Engineer">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/portfolio/styles.css">
 
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -49,7 +50,74 @@
     </div>
     <div class="page">
       <div class="page-content">
-        <h1>Portfolio - Coming Soon</h1>
+        <h1>Portfolio Projects</h1>
+        <div class="projects-list">
+
+          <div class="project">
+            <div class="row1">
+              <div class="details">
+                <h1 class="title">En Root</h1>
+                <div class="links">
+                  <a href="https://en-root.herokuapp.com/" target="_blank" class="link">Deployed Demo</a>
+                  <a href="https://github.com/demeter-project/demeter-be" target="_blank" class="link">Back-end GitHub</a>
+                  <a href="https://github.com/demeter-project/demeter-be" target="_blank" class="link">Front-end GitHub</a>
+                </div>
+                <div class="description">
+                  <p>En Root is a garden management app that allows users to find native plants for their location, research them, and organize them into garden plots. When a user adds plants to their virtual garden they can see useful information about their garden plots like optimal soil PH levels, shade tolerance, and plant toxicity. They can also see useful information about their garden like a seven day weather forecast.</p>
+                  <p>The app uses plant data scraped from the USDA Plant Database, weather data from the OpenWeatherMap API, and USDA plant hardiness zone data provided by a public API from the Oregon State PRISM Climate Group. The data is aggregated on our back-end rails app and served up through an API to this Front-End Rails app. Additional Information about the backend service can be found on the backend GitHub repository linked above.</p>
+                </div>
+              </div>
+              <div class="screen">
+                <img src="/portfolio/images/enroot-demo-gif.gif" class="proj-screenshot" />
+              </div>
+            </div>
+            <h4>Tech Stack</h4>
+            <ul class="tech-stack">
+              <li class="tech-stack-item">Ruby on Rails</li>
+              <li class="tech-stack-item">RSpec</li>
+              <li class="tech-stack-item">PostgreSQL</li>
+              <li class="tech-stack-item">Google Oauth</li>
+              <li class="tech-stack-item">CircleCI</li>
+              <li class="tech-stack-item">Heroku</li>
+              <li class="tech-stack-item">CI / CD</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="row1">
+              <div class="details">
+                <h1 class="title">RE-SIP-E</h1>
+                <div class="links">
+                  <a href="https://re-sip-e.netlify.app/" target="_blank" class="link">Deployed Demo</a>
+                  <a href="https://re-sip-e-be.fly.dev/graphiql" target="_blank" class="link">Deployed Back-end Graphiql Demo</a>
+                  <a href="https://github.com/re-sip-e/re-sip-e_be" target="_blank" class="link">Back-end GitHub</a>
+                  <a href="https://github.com/re-sip-e/re-sip-e_fe" target="_blank" class="link">Front-end GitHub</a>
+                </div>
+                <div class="description">
+                  <p>This application helps bars easily maintain, modify, and search through their collection of drinks. It was created with both a front-end and back-end team of Turing students utilizing React, Ruby on Rails, and GraphQL.</p>
+                </div>
+              </div>
+              <div class="screen">
+                <iframe class="proj-screenshot" width="560" height="315" src="https://www.youtube.com/embed/m2RXiKex1OU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+            <h4>Tech Stack</h4>
+            <ul class="tech-stack">
+              <li class="tech-stack-item">Ruby on Rails</li>
+              <li class="tech-stack-item">PostgreSQL</li>
+              <li class="tech-stack-item">GraphQL</li>
+              <li class="tech-stack-item">Fly.io</li>
+              <li class="tech-stack-item">React</li>
+              <li class="tech-stack-item">Apollo</li>
+              <li class="tech-stack-item">Netlify</li>
+              <li class="tech-stack-item">CircleCI</li>
+              <li class="tech-stack-item">CI / CD</li>
+            </ul>
+          </div>
+
+        <p>More projects coming soon...</p><br>
+
+        </div>
       </div>
     </div>
   </div>
