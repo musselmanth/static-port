@@ -24,16 +24,14 @@
     <meta property="og:url" content="https://www.tommusselman.com" />
     <meta property="og:image" content="https://www.tommsuselman.com/headshot.png" />
   </head>
-</head>
-<body>
-  <div class="pg-body">
+  <body>
     <div class="nav-bar">
       <a href="/">
         <div class="title">
           <img class="headshot" src="/headshot.jpeg" />
           <div class="titletext">
             <h1>Tom Musselman</h1>
-            <h3><em>Software Engineer</em></h3>
+            <h3 id="role"><em>Software Engineer</em></h3>
           </div>
         </div>
       </a>
@@ -48,261 +46,264 @@
         <div class="social-btn"><a href="https://www.github.com/musselmanth"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></div>
       </div>
     </div>
-    <div class="page">
-      <div class="page-content">
-        <h1>Portfolio Projects</h1>
-        <div class="projects-list">
 
-          <div class="project">
-            <div class="row1">
-              <div class="details">
-                <h1 class="title">En Root</h1>
-                <div class="links">
-                  <a href="https://en-root.herokuapp.com/" target="_blank" class="link">Deployed Demo</a>
-                  <a href="https://github.com/demeter-project/demeter-be" target="_blank" class="link">Back-end GitHub</a>
-                  <a href="https://github.com/demeter-project/demeter-be" target="_blank" class="link">Front-end GitHub</a>
-                </div>
-                <div class="description">
-                  <p>En Root is a garden management app that allows users to find native plants for their location, research them, and organize them into garden plots. When a user adds plants to their virtual garden they can see useful information about their garden plots like optimal soil PH levels, shade tolerance, and plant toxicity. They can also see useful information about their garden like a seven day weather forecast.</p>
-                  <p>The app uses plant data scraped from the USDA Plant Database, weather data from the OpenWeatherMap API, and USDA plant hardiness zone data provided by a public API from the Oregon State PRISM Climate Group. The data is aggregated on our back-end rails app and served up through an API to this Front-End Rails app. Additional Information about the backend service can be found on the backend GitHub repository linked above.</p>
-                </div>
+    <div class="page-content">
+      <h1>Portfolio Projects</h1>
+      <div class="projects-list">
+
+        <div class="project">
+          <div class="row1">
+            <div class="details">
+              <h1 class="title">En Root</h1>
+              <div class="links">
+                <a href="https://en-root.herokuapp.com/" target="_blank" class="link">Deployed Demo</a>
+                <a href="https://github.com/demeter-project/demeter-be" target="_blank" class="link">Back-end GitHub</a>
+                <a href="https://github.com/demeter-project/demeter-be" target="_blank" class="link">Front-end GitHub</a>
               </div>
-              <div class="screen">
-                <img src="/portfolio/images/enroot-demo-gif.gif" class="proj-screenshot" />
+              <div class="description">
+                <p>En Root is a garden management app that allows users to find native plants for their location, research them, and organize them into garden plots. When a user adds plants to their virtual garden they can see useful information about their garden plots like optimal soil PH levels, shade tolerance, and plant toxicity. They can also see useful information about their garden like a seven day weather forecast.</p>
+                <p>The app uses plant data scraped from the USDA Plant Database, weather data from the OpenWeatherMap API, and USDA plant hardiness zone data provided by a public API from the Oregon State PRISM Climate Group. The data is aggregated on our back-end rails app and served up through an API to this Front-End Rails app. Additional Information about the backend service can be found on the backend GitHub repository linked above.</p>
               </div>
             </div>
-            <h4>Tech Stack</h4>
-            <ul class="tech-stack">
-              <li class="tech-stack-item">Ruby on Rails</li>
-              <li class="tech-stack-item">RSpec</li>
-              <li class="tech-stack-item">PostgreSQL</li>
-              <li class="tech-stack-item">Google Oauth</li>
-              <li class="tech-stack-item">CircleCI</li>
-              <li class="tech-stack-item">Heroku</li>
-              <li class="tech-stack-item">CI / CD</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <div class="row1">
-              <div class="details">
-                <h1 class="title">RE-SIP-E</h1>
-                <div class="links">
-                  <a href="https://re-sip-e.netlify.app/" target="_blank" class="link">Deployed Demo</a>
-                  <a href="https://re-sip-e-be.fly.dev/graphiql" target="_blank" class="link">Deployed Back-end Graphiql Demo</a>
-                  <a href="https://github.com/re-sip-e/re-sip-e_be" target="_blank" class="link">Back-end GitHub</a>
-                  <a href="https://github.com/re-sip-e/re-sip-e_fe" target="_blank" class="link">Front-end GitHub</a>
-                </div>
-                <div class="description">
-                  <p>Re-sip-e is a cocktail management app that allows bartenders and bar managers to find and customize cocktail recipes and save them to their "black book" for reference and new employee training.</p>
-                  <p>As a team of 4 backend engineers and 3 frontend engineers, the main goal of this project was to practice collaborating as a full stack team and working in an agile environment. We used a Miro Board to collaboratively plan the application from the ground up, and a GitHub project board to plan sprints and organize tasks.</p>
-                  <p>As a backend team we also focused on learning and implementing a GraphQL backend Rails app. We learned a lot about the pros and cons of working with GraphQL as opposed to a RESTful API and when one might be better than the other.</p>
-                </div>
-              </div>
-              <div class="screen">
-                <iframe class="proj-screenshot" width="560" height="315" src="https://www.youtube.com/embed/m2RXiKex1OU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
+            <div class="screen">
+              <img src="/portfolio/images/enroot-demo-gif.gif" class="proj-screenshot" />
             </div>
-            <h4>Tech Stack</h4>
-            <ul class="tech-stack">
-              <li class="tech-stack-item">Ruby on Rails</li>
-              <li class="tech-stack-item">PostgreSQL</li>
-              <li class="tech-stack-item">GraphQL</li>
-              <li class="tech-stack-item">Fly.io</li>
-              <li class="tech-stack-item">React</li>
-              <li class="tech-stack-item">Apollo</li>
-              <li class="tech-stack-item">Netlify</li>
-              <li class="tech-stack-item">CircleCI</li>
-              <li class="tech-stack-item">CI / CD</li>
-            </ul>
           </div>
-
-          <div class="project">
-            <div class="row1">
-              <div class="details">
-                <h1 class="title">Viewing Party</h1>
-                <div class="links">
-                  <a href="https://viewing-party-lite-totm.herokuapp.com/" target="_blank" class="link">Deployed Demo</a>
-                  <a href="https://github.com/musselmanth/viewing_party_lite" target="_blank" class="link">GitHub</a>
-                </div>
-                <div class="description">
-                  <p>Viewing Party is a full stack Ruby on Rails app that allows users to create and manage movie viewing parties.</p>
-
-                  <p>Highlights of things I learned from this project:</p>
-                  <ul>
-                    <li>Consuming an external API using a Service/Facade/PORO model.</li>
-                    <li>Styling views using Bootstrap 5.</li>
-                    <li>Using sessions and BCrypt to manage user authentication.</li>
-                    <li>Managing user authorization with admin and standard users.</li>
-                    <li>Using cookies to create a more user-friendly experience.</li>
-                    <li>Displaying server-side validations in a dynamic way on Bootstrap forms.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="screen">
-                <iframe class="proj-screenshot" width="560" height="315" src="https://www.youtube.com/embed/zlYZFv2D5Po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-            </div>
-            <h4>Tech Stack</h4>
-            <ul class="tech-stack">
-              <li class="tech-stack-item">Ruby on Rails</li>
-              <li class="tech-stack-item">PostgreSQL</li>
-              <li class="tech-stack-item">Heroku</li>
-              <li class="tech-stack-item">BCrypt</li>
-              <li class="tech-stack-item">RSpec</li>
-              <li class="tech-stack-item">Bootstrap</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <div class="row1">
-              <div class="details">
-                <h1 class="title">Lunch and Learn</h1>
-                <div class="links">
-                  <a href="https://github.com/musselmanth/lunch-and-learn" target="_blank" class="link">GitHub</a>
-                </div>
-                <div class="description">
-                  <p>Lunch and Learn is a Ruby on Rails RESTful API application. It consumes multiple external APIs and compiles the data through multiple endpoints. It also allows POST requests to save data in a Postgres database.</p>
-                  <p>Explore the GitHub README to see a list of endpoints and sample responses.
-                </div>
-              </div>
-              <div class="screen">
-                <img src="/portfolio/images/lunch-and-learn.png" class="proj-screenshot"/>
-              </div>
-            </div>
-            <h4>Tech Stack</h4>
-            <ul class="tech-stack">
-              <li class="tech-stack-item">Ruby on Rails</li>
-              <li class="tech-stack-item">PostgreSQL</li>
-              <li class="tech-stack-item">RSpec</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <div class="row1">
-              <div class="details">
-                <h1 class="title">Ruby Battleship</h1>
-                <div class="links">
-                  <a href="https://github.com/musselmanth/battleship_2207" target="_blank" class="link">GitHub</a>
-                </div>
-                <div class="description">
-                  <p>This application is an interactive command-line Ruby game emulating the classic board game Battleship. The main learning accomplishments of the project were using principles of Object-Oriented Programming, using complex algorithms, coding using test-driven development, and using best practices for Ruby enumerables.</p>
-                  <p>Why put a command-line game in my portfolio? Mostly to show off the intelligent computer player algorithm I created. I dare you to clone the game on GitHub and try to beat it.</p>
-                </div>
-              </div>
-              <div class="screen">
-                <img src="/portfolio/images/battle-demo.gif" class="proj-screenshot" style="height: 400px; width: 375px;"/>
-              </div>
-            </div>
-            <h4>Tech Stack</h4>
-            <ul class="tech-stack">
-              <li class="tech-stack-item">Ruby 2.7.2</li>
-              <li class="tech-stack-item">RSpec</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <div class="row1">
-              <div class="details">
-                <h1 class="title">Little "Esty" Shop</h1>
-                <div class="links">
-                  <a href="https://little-esty-tm.herokuapp.com/" target="_blank" class="link">Deployed Demo</a>
-                  <a href="https://github.com/musselmanth/little-esty-shop" target="_blank" class="link">GitHub</a>
-                </div>
-                <div class="description">
-                  <p>Little Esty Shop is a mock online retail platform that allows admins and merchants to manage invoices, customer orders, discounts, and more.</p>
-                  <p>The main goal of this project is to show off my ability to do very complex SQL queries in a large relationtional database. The project also demonstrates the use of Rails' ORM, ActiveRecord, to manage those complex queries. </p>
-                </div>
-              </div>
-              <div class="screen">
-                <img src="/portfolio/images/esty-db.png" class="proj-screenshot" />
-              </div>
-            </div>
-            <h4>Tech Stack</h4>
-            <ul class="tech-stack">
-              <li class="tech-stack-item">Ruby on Rails</li>
-              <li class="tech-stack-item">PostgreSQL</li>
-              <li class="tech-stack-item">ActiveRecord</li>
-              <li class="tech-stack-item">RSpec</li>
-              <li class="tech-stack-item">Heroku</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <div class="row1">
-              <div class="details">
-                <h1 class="title">Escape Room Projector Control Script</h1>
-                <div class="links">
-                  <a href="https://github.com/musselmanth/mustache-thief" target="_blank" class="link">GitHub</a>
-                </div>
-                <div class="description">
-                  <p>This is an exmaple of a python script I created to aid in interactivity for an escape room.</p>
-                  <p>This script uses GPIO pins and a serial connection on a Raspberry Pi to interact with a projector and physical buttons in the escape room. It also demonstrates documentation I created for non-technical fellow employees.</p>
-                </div>
-              </div>
-              <div class="screen">
-                <img src="/portfolio/images/mustache.png" class="proj-screenshot" />
-              </div>
-            </div>
-            <h4>Tech Stack</h4>
-            <ul class="tech-stack">
-              <li class="tech-stack-item">Python</li>
-              <li class="tech-stack-item">Raspberry Pi</li>
-              <li class="tech-stack-item">Linux</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <div class="row1">
-              <div class="details">
-                <h1 class="title">pixelPAINTER</h1>
-                <div class="links">
-                  <a href="https://github.com/musselmanth/pixelpainter" target="_blank" class="link">GitHub</a>
-                </div>
-                <div class="description">
-                  <p>This is a very old hobby project that I used to learn Java and some basic OOP principles and how to develop a GUI.</p>
-                  <p>It's a simple painting program that allows the user to choose and sample colors, and save their creations to png files.</p>
-                </div>
-              </div>
-              <div class="screen">
-                <img src="/portfolio/images/pixelpainter.png" class="proj-screenshot" />
-              </div>
-            </div>
-            <h4>Tech Stack</h4>
-            <ul class="tech-stack">
-              <li class="tech-stack-item">Java</li>
-              <li class="tech-stack-item">Swing</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <div class="row1">
-              <div class="details">
-                <h1 class="title">DONT F*&% UP</h1>
-                <div class="links">
-                  <a href="/ballgame" target="_blank" class="link">Demo</a>
-                </div>
-                <div class="description">
-                  <p>Warning: NSFW language</p>
-                  <p>A terrible but kind of funny first hobby javascript project from quite a few years ago. It's a blasterball-esque game build with vanilla javascript on a HTML canvas.</p>
-                  <p>Sorry for the insults and language.</p>
-                </div>
-              </div>
-              <div class="screen">
-                <img src="/portfolio/images/ballgame.png" class="proj-screenshot" style="width: 400px; height: 400px;"/>
-              </div>
-            </div>
-            <h4>Tech Stack</h4>
-            <ul class="tech-stack">
-              <li class="tech-stack-item">JavaScipt</li>
-            </ul>
-          </div>
+          <h4>Tech Stack</h4>
+          <ul class="tech-stack">
+            <li class="tech-stack-item">Ruby on Rails</li>
+            <li class="tech-stack-item">RSpec</li>
+            <li class="tech-stack-item">PostgreSQL</li>
+            <li class="tech-stack-item">Google Oauth</li>
+            <li class="tech-stack-item">CircleCI</li>
+            <li class="tech-stack-item">Heroku</li>
+            <li class="tech-stack-item">CI / CD</li>
+          </ul>
         </div>
+
+        <div class="project">
+          <div class="row1">
+            <div class="details">
+              <h1 class="title">RE-SIP-E</h1>
+              <div class="links">
+                <a href="https://re-sip-e.netlify.app/" target="_blank" class="link">Deployed Demo</a>
+                <a href="https://re-sip-e-be.fly.dev/graphiql" target="_blank" class="link">Deployed Back-end Graphiql Demo</a>
+                <a href="https://github.com/re-sip-e/re-sip-e_be" target="_blank" class="link">Back-end GitHub</a>
+                <a href="https://github.com/re-sip-e/re-sip-e_fe" target="_blank" class="link">Front-end GitHub</a>
+              </div>
+              <div class="description">
+                <p>Re-sip-e is a cocktail management app that allows bartenders and bar managers to find and customize cocktail recipes and save them to their "black book" for reference and new employee training.</p>
+                <p>As a team of 4 backend engineers and 3 frontend engineers, the main goal of this project was to practice collaborating as a full stack team and working in an agile environment. We used a Miro Board to collaboratively plan the application from the ground up, and a GitHub project board to plan sprints and organize tasks.</p>
+                <p>As a backend team we also focused on learning and implementing a GraphQL backend Rails app. We learned a lot about the pros and cons of working with GraphQL as opposed to a RESTful API and when one might be better than the other.</p>
+              </div>
+            </div>
+            <div class="screen">
+              <iframe class="proj-screenshot" width="560" height="315" src="https://www.youtube.com/embed/m2RXiKex1OU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <h4>Tech Stack</h4>
+          <ul class="tech-stack">
+            <li class="tech-stack-item">Ruby on Rails</li>
+            <li class="tech-stack-item">PostgreSQL</li>
+            <li class="tech-stack-item">GraphQL</li>
+            <li class="tech-stack-item">Fly.io</li>
+            <li class="tech-stack-item">React</li>
+            <li class="tech-stack-item">Apollo</li>
+            <li class="tech-stack-item">Netlify</li>
+            <li class="tech-stack-item">CircleCI</li>
+            <li class="tech-stack-item">CI / CD</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="row1">
+            <div class="details">
+              <h1 class="title">Viewing Party</h1>
+              <div class="links">
+                <a href="https://viewing-party-lite-totm.herokuapp.com/" target="_blank" class="link">Deployed Demo</a>
+                <a href="https://github.com/musselmanth/viewing_party_lite" target="_blank" class="link">GitHub</a>
+              </div>
+              <div class="description">
+                <p>Viewing Party is a full stack Ruby on Rails app that allows users to create and manage movie viewing parties.</p>
+
+                <p>Highlights of things I learned from this project:</p>
+                <ul>
+                  <li>Consuming an external API using a Service/Facade/PORO model.</li>
+                  <li>Styling views using Bootstrap 5.</li>
+                  <li>Using sessions and BCrypt to manage user authentication.</li>
+                  <li>Managing user authorization with admin and standard users.</li>
+                  <li>Using cookies to create a more user-friendly experience.</li>
+                  <li>Displaying server-side validations in a dynamic way on Bootstrap forms.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="screen">
+              <iframe class="proj-screenshot" width="560" height="315" src="https://www.youtube.com/embed/zlYZFv2D5Po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <h4>Tech Stack</h4>
+          <ul class="tech-stack">
+            <li class="tech-stack-item">Ruby on Rails</li>
+            <li class="tech-stack-item">PostgreSQL</li>
+            <li class="tech-stack-item">Heroku</li>
+            <li class="tech-stack-item">BCrypt</li>
+            <li class="tech-stack-item">RSpec</li>
+            <li class="tech-stack-item">Bootstrap</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="row1">
+            <div class="details">
+              <h1 class="title">Lunch and Learn</h1>
+              <div class="links">
+                <a href="https://github.com/musselmanth/lunch-and-learn" target="_blank" class="link">GitHub</a>
+              </div>
+              <div class="description">
+                <p>Lunch and Learn is a Ruby on Rails RESTful API application. It consumes multiple external APIs and compiles the data through multiple endpoints. It also allows POST requests to save data in a Postgres database.</p>
+                <p>Explore the GitHub README to see a list of endpoints and sample responses.
+              </div>
+            </div>
+            <div class="screen">
+              <img src="/portfolio/images/lunch-and-learn.png" class="proj-screenshot"/>
+            </div>
+          </div>
+          <h4>Tech Stack</h4>
+          <ul class="tech-stack">
+            <li class="tech-stack-item">Ruby on Rails</li>
+            <li class="tech-stack-item">PostgreSQL</li>
+            <li class="tech-stack-item">RSpec</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="row1">
+            <div class="details">
+              <h1 class="title">Ruby Battleship</h1>
+              <div class="links">
+                <a href="https://github.com/musselmanth/battleship_2207" target="_blank" class="link">GitHub</a>
+              </div>
+              <div class="description">
+                <p>This application is an interactive command-line Ruby game emulating the classic board game Battleship. The main learning accomplishments of the project were using principles of Object-Oriented Programming, using complex algorithms, coding using test-driven development, and using best practices for Ruby enumerables.</p>
+                <p>Why put a command-line game in my portfolio? Mostly to show off the intelligent computer player algorithm I created. I dare you to clone the game on GitHub and try to beat it.</p>
+              </div>
+            </div>
+            <div class="screen">
+              <img src="/portfolio/images/battle-demo.gif" class="proj-screenshot" style="height: 400px; width: 375px;"/>
+            </div>
+          </div>
+          <h4>Tech Stack</h4>
+          <ul class="tech-stack">
+            <li class="tech-stack-item">Ruby 2.7.2</li>
+            <li class="tech-stack-item">RSpec</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="row1">
+            <div class="details">
+              <h1 class="title">Little "Esty" Shop</h1>
+              <div class="links">
+                <a href="https://little-esty-tm.herokuapp.com/" target="_blank" class="link">Deployed Demo</a>
+                <a href="https://github.com/musselmanth/little-esty-shop" target="_blank" class="link">GitHub</a>
+              </div>
+              <div class="description">
+                <p>Little Esty Shop is a mock online retail platform that allows admins and merchants to manage invoices, customer orders, discounts, and more.</p>
+                <p>The main goal of this project is to show off my ability to do very complex SQL queries in a large relationtional database. The project also demonstrates the use of Rails' ORM, ActiveRecord, to manage those complex queries. </p>
+              </div>
+            </div>
+            <div class="screen">
+              <img src="/portfolio/images/esty-db.png" class="proj-screenshot" />
+            </div>
+          </div>
+          <h4>Tech Stack</h4>
+          <ul class="tech-stack">
+            <li class="tech-stack-item">Ruby on Rails</li>
+            <li class="tech-stack-item">PostgreSQL</li>
+            <li class="tech-stack-item">ActiveRecord</li>
+            <li class="tech-stack-item">RSpec</li>
+            <li class="tech-stack-item">Heroku</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="row1">
+            <div class="details">
+              <h1 class="title">Escape Room Projector Control Script</h1>
+              <div class="links">
+                <a href="https://github.com/musselmanth/mustache-thief" target="_blank" class="link">GitHub</a>
+              </div>
+              <div class="description">
+                <p>This is an exmaple of a python script I created to aid in interactivity for an escape room.</p>
+                <p>This script uses GPIO pins and a serial connection on a Raspberry Pi to interact with a projector and physical buttons in the escape room. It also demonstrates documentation I created for non-technical fellow employees.</p>
+              </div>
+            </div>
+            <div class="screen">
+              <img src="/portfolio/images/mustache.png" class="proj-screenshot" />
+            </div>
+          </div>
+          <h4>Tech Stack</h4>
+          <ul class="tech-stack">
+            <li class="tech-stack-item">Python</li>
+            <li class="tech-stack-item">Raspberry Pi</li>
+            <li class="tech-stack-item">Linux</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="row1">
+            <div class="details">
+              <h1 class="title">pixelPAINTER</h1>
+              <div class="links">
+                <a href="https://github.com/musselmanth/pixelpainter" target="_blank" class="link">GitHub</a>
+              </div>
+              <div class="description">
+                <p>This is a very old hobby project that I used to learn Java and some basic OOP principles and how to develop a GUI.</p>
+                <p>It's a simple painting program that allows the user to choose and sample colors, and save their creations to png files.</p>
+              </div>
+            </div>
+            <div class="screen">
+              <img src="/portfolio/images/pixelpainter.png" class="proj-screenshot" />
+            </div>
+          </div>
+          <h4>Tech Stack</h4>
+          <ul class="tech-stack">
+            <li class="tech-stack-item">Java</li>
+            <li class="tech-stack-item">Swing</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="row1">
+            <div class="details">
+              <h1 class="title">DONT F*&% UP</h1>
+              <div class="links">
+                <a href="/ballgame" target="_blank" class="link">Demo</a>
+              </div>
+              <div class="description">
+                <p>Warning: NSFW language</p>
+                <p>A terrible but kind of funny first hobby javascript project from quite a few years ago. It's a blasterball-esque game build with vanilla javascript on a HTML canvas.</p>
+                <p>Sorry for the insults and language.</p>
+              </div>
+            </div>
+            <div class="screen">
+              <img src="/portfolio/images/ballgame.png" class="proj-screenshot" style="width: 400px; height: 400px;"/>
+            </div>
+          </div>
+          <h4>Tech Stack</h4>
+          <ul class="tech-stack">
+            <li class="tech-stack-item">JavaScipt</li>
+          </ul>
+        </div>
+
       </div>
     </div>
+
     <div class="footer">
       <div class="footer-content"><a href="mailto:tmusselman@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/tmussel">LinkedIn</a> | <a href="https://www.github.com/musselmanth">GitHub</a> | <a href="https://www.tommusselman.com/resume.pdf" target="_blank">Resumé</a></div>
     </div>
-  </div>
-</body>
+
+    <script type="text/javascript" src="/scroll.js"></script>
+
+  </body>
 </html>
