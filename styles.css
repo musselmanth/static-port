@@ -137,11 +137,11 @@ body {
 }
 
 .social-btn svg {
-  fill: #78488e;
+  fill: #DDDDDD;
 }
 
 .social-btn svg:hover {
-  fill: #DDDDDD;
+  fill: #78488e;
 }
 
 .page {
