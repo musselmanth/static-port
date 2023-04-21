@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementsByClassName("social-buttons")[0].style.flexDirection = "row";
     document.getElementsByClassName("headshot")[0].style.width = "50px";
     document.getElementsByClassName("headshot")[0].style.height = "50px";
