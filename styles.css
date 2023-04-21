@@ -5,7 +5,7 @@ html {
 body {
   font-family: 'Lexend', sans-serif;
   color: #DDDDDD;
-  background-color: #333333;
+  background-color: #222222;
   margin: 0;
   height: 100%;
   display: flex;
@@ -142,6 +142,7 @@ body {
   margin-top: 115px;
   padding: 15px 50px;
   flex-grow: 5;
+  background-color: #333333;
 }
 
 .page-content a {
