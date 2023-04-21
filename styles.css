@@ -139,7 +139,8 @@ body {
 }
 
 .page-content {
-  padding: 115px 50px 15px;
+  padding: 15px 50px;
+  margin-top: 115px;
   flex-grow: 5;
   background-color: #333333;
 }
