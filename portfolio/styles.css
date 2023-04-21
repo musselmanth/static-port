@@ -50,8 +50,8 @@
   margin-right: 8px;
   margin-bottom: 8px;
   padding: 4px;
-  border-bottom: 2px solid #333333;
-  background: linear-gradient(to top, #333333 50%, transparent 50%);
+  border-bottom: 2px solid #c7b24d;
+  background: linear-gradient(to top, #c7b24d 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: top left;
   transition: background .2s ease-out;
@@ -98,6 +98,7 @@
 }
 
 .tech-stack-item:hover {
-  border-radius: 10px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   background-color: #FFFFFF;
 }

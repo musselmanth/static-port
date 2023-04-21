@@ -80,7 +80,7 @@ function restartGame() {
 	play = true;
 	x = canvas.width/2;
 	y = canvas.height-150;
-	gameText="DON'T FUCK UP";
+	gameText="DON'T F%$# UP";
 	dx = 4;
 	dy = -4;
 	for (i = 0; i < 10; i++) {
@@ -340,7 +340,7 @@ function drawText() {
 			score = 0;
 		}
 		else {
-			ctx.fillText("Score: FUCK YOU x" + score, 40, canvas.height -50);
+			ctx.fillText("Score: F%$# YOU x" + score, 40, canvas.height -50);
 
 		}
 	}
