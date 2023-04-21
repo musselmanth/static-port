@@ -71,12 +71,6 @@ body {
   padding-bottom: 0.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  border-bottom: 4px solid #333333;
-
-  background: linear-gradient(to top, #333333 50%, transparent 50%);
-  background-size: 100% 200%;
-  background-position: top left;
-  transition: background .2s ease-out;
 }
 
 .nav-button:hover {
@@ -84,18 +78,52 @@ body {
   background-position: bottom left;
 }
 
-.active-btn {
-  background-color: #333333;
-}
-
-.ctr-btn {
+.btn-1 {
   margin-left: 4px;
+  border-bottom: 4px solid #ad4444;
+
+  background: linear-gradient(to top, #ad4444 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  transition: background .2s ease-out;
 }
 
-.rght-btn {
+.btn-2 {
+  margin-left: 4px;
+  border-bottom: 4px solid #c7b24d;
+
+  background: linear-gradient(to top, #c7b24d 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  transition: background .2s ease-out;
+}
+
+.btn-3 {
+  margin-left: 4px;
+  border-bottom: 4px solid #3e933f;
+
+  background: linear-gradient(to top, #3e933f 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  transition: background .2s ease-out;
+}
+
+.btn-4 {
   margin-left: 4px;
   margin-right: 4px;
+  border-bottom: 4px solid #4447ad;
+
+  background: linear-gradient(to top, #4447ad 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  transition: background .2s ease-out;
 }
+
+.active-btn {
+  color: #FFFFFF;
+  background-position: bottom left;
+}
+
 
 .social-buttons {
   display: flex;
@@ -110,11 +138,11 @@ body {
 }
 
 .social-btn svg {
-  fill: #DDDDDD;
+  fill: #78488e;
 }
 
 .social-btn svg:hover {
-  fill: #FFFFFF;
+  fill: #DDDDDD;
 }
 
 .page {
