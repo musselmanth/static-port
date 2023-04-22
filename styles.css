@@ -20,49 +20,62 @@ body {
   margin: 0;
   padding: 0;
   position: fixed;
-  width: 100%;
+  width: calc(100% - 40px);
   top: 0;
   transition: 0.4s;
+  padding: 10px 20px;
 }
 
 .headshot {
   width: 90px;
   height: 90px;
-  padding: 1rem;
   border-radius: 18%;
   transition: 0.4s;
 }
 
 .title {
+  align-self: center;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-start;
 }
 
-.titletext {
-  padding-bottom: 1rem;
-}
-
 .title:hover {
   color: #FFFFFF;
 }
 
-.titletext h1, h3 {
+.titletext {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.name {
   padding: 0;
-  padding-top: 0.2rem;
   margin: 0;
-  transition: 0.4s;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .nav-links {
+  align-self: flex-end;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
   flex-grow: 3;
-  padding: 1rem;
   transition: 0.4s;
+  padding-right: 10px;
 }
 
 .nav-bar a {
@@ -116,17 +129,18 @@ body {
 }
 
 .social-buttons {
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 1rem;
   transition: 0.4s;
+
 }
 
 .social-btn {
-  width: 2rem;
-  padding: 0.5rem 0.5rem 0;
+  width: 30px;
   transition: 0.4s;
+  margin: 6px;
 }
 
 .social-btn svg {
