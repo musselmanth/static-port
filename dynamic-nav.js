@@ -1,14 +1,14 @@
 let showMenu = false;
 
-const socialButtons = document.getElementsByClassName("social-buttons")[0];
-const socialBtns = document.getElementsByClassName("social-btn");
-const headshot = document.getElementsByClassName("headshot")[0];
-const role = document.getElementsByClassName("role")[0];
-const navBar = document.getElementsByClassName("nav-bar")[0];
-const navLinks = document.getElementsByClassName("nav-links")[0];
-const mobileMenu = document.getElementsByClassName("mobile-menu")[0];
-const title = document.getElementsByClassName("title")[0];
-const pageContent = document.getElementsByClassName("page-content")[0];
+const socialButtons = document.querySelector(".social-buttons");
+const socialBtns = document.querySelectorAll(".social-btn");
+const headshot = document.querySelector(".headshot");
+const role = document.querySelector(".role");
+const navBar = document.querySelector(".nav-bar");
+const navLinks = document.querySelector(".nav-links");
+const mobileMenu = document.querySelector(".mobile-menu");
+const title = document.querySelector(".title");
+const pageContent = document.querySelector(".page-content");
 
 const navStateHandler = () => {
   const scrolled = (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80);
@@ -19,7 +19,8 @@ const navStateHandler = () => {
     socialButtons.style.display = "flex";
     socialButtons.style.margin = "0";
 
-    for (btn of socialBtns) { btn.style.width = "30px"; }
+    // for (btn of socialBtns) { btn.style.width = "30px"; }
+    socialBtns.forEach((btn) => {btn.style.width = "30px"});
 
     role.style.display = "inline";
     title.style.alignSelf = "center";
@@ -48,9 +49,7 @@ const navStateHandler = () => {
     socialButtons.style.display = "flex";
     socialButtons.style.margin = "0";
 
-    for (btn of socialBtns) {
-      btn.style.width = "30px";
-    }
+    socialBtns.forEach((btn) => {btn.style.width = "30px"});
     
     role.style.display = "none";
     title.style.alignSelf = "center";
@@ -77,9 +76,7 @@ const navStateHandler = () => {
     socialButtons.style.display = "none";
     socialButtons.style.margin = "10px 0 0 0";
 
-    for (btn of socialBtns) {
-      btn.style.width = "60px";
-    }
+    socialBtns.forEach((btn) => {btn.style.width = "60px"});
     
     role.style.display = "none";
     title.style.alignSelf = "stretch";
