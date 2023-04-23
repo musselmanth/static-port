@@ -125,3 +125,4 @@ window.onscroll = navStateHandler;
 window.onresize = navStateHandler;
 
 navStateHandler();
+navBar.style.display = "flex";
