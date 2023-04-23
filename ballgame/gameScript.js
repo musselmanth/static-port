@@ -340,7 +340,7 @@ function drawText() {
 			score = 0;
 		}
 		else {
-			ctx.fillText("Score: F%$# YOU x" + score, 40, canvas.height -50);
+			ctx.fillText("Score: " + score, 40, canvas.height -50);
 
 		}
 	}
