@@ -1,4 +1,4 @@
-.projects.list {
+.projects-list {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -13,26 +13,24 @@
   margin-bottom: 1.5rem;
 }
 
-.project h4 {
-  margin: 0;
-  margin-top: 1rem;
-}
-
 .row1 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap-reverse;
 }
 
 .details {
   width: 45%;
   font-size: 0.9rem;
   margin-right: 1rem;
+  margin-top: 0.5rem;
+  flex: 1 1 300px;
 }
 
-.details h1 {
+.project h1 {
   margin: 0;
   padding: 0px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .links {
@@ -68,6 +66,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1 1 300px;
 }
 
 .proj-screenshot {
