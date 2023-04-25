@@ -45,7 +45,11 @@ const setTopFullSizeStyles = () => {
   navContainer.style.alignItems = "flex-end";
   navContainer.style.margin = "0 20px 0 0";
   navContainer.style.justifyContent = "flex-end";
-  navBtns.forEach(btn => {btn.style.padding = "0.6rem 1.5rem 0.5rem 1.5rem"});
+  navBtns.forEach(btn => {
+    btn.style.padding = "0.6rem 1.5rem 0.5rem 1.5rem"
+    btn.style.fontSize = "1.3rem";
+    btn.style.textAlign = "center";
+  });
   pageContent.style.marginTop = "115px";
   menuBtn.classList.remove("close");
   showMobileMenu = false;
@@ -78,7 +82,11 @@ const setScrolledFullSizeStyles = () => {
   navContainer.style.alignItems = "flex-end";
   navContainer.style.margin = "0 20px 0 0";
   navContainer.style.justifyContent = "flex-end";
-  navBtns.forEach(btn => {btn.style.padding = "0.6rem 1.5rem 0.5rem 1.5rem"});
+  navBtns.forEach(btn => {
+    btn.style.padding = "0.6rem 1.5rem 0.5rem 1.5rem";
+    btn.style.fontSize = "1.3rem";
+    btn.style.textAlign = "center";
+  });
   pageContent.style.marginTop = "115px";
   menuBtn.classList.remove("close");
   showMobileMenu = false;
@@ -111,7 +119,11 @@ const setMobileStyles = () => {
   navContainer.style.alignItems = "stretch";
   navContainer.style.margin = "20px 20px 20px 20px";
   navContainer.style.justifyContent = "flex-start";
-  navBtns.forEach(btn => {btn.style.padding = "1.6rem 1.5rem 1.5rem 1.5rem"});
+  navBtns.forEach(btn => {
+    btn.style.padding = "1.6rem 1.5rem 1.5rem 1.5rem";
+    btn.style.fontSize = "2rem";
+    btn.style.textAlign = "left";
+  });
   pageContent.style.marginTop = "50px";
   menuBtn.classList.remove("close");
   showMobileMenu = false;
