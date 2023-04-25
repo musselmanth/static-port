@@ -168,44 +168,63 @@ body a {
   text-decoration: none;
 }
 
-.red-btn {
-  border-bottom: 4px solid #ad4444;
-  background: linear-gradient(to top, #ad4444 50%, transparent 50%);
+.red-top {
+  background: linear-gradient(to top, #ad4444 calc(50% + 4px), transparent calc(50% - 4px));
+  background-size: 100% 200%;
 }
 
-.yellow-btn {
-  border-bottom: 4px solid #c7b24d;
-  background: linear-gradient(to top, #c7b24d 50%, transparent 50%);
+.yellow-top {
+  background: linear-gradient(to top, #c7b24d calc(50% + 4px), transparent calc(50% - 4px));
+  background-size: 100% 200%;
 }
 
-.green-btn {
-  border-bottom: 4px solid #3e933f;
-  background: linear-gradient(to top, #3e933f 50%, transparent 50%);
+.green-top {
+  background: linear-gradient(to top, #3e933f calc(50% + 4px), transparent calc(50% - 4px));
+  background-size: 100% 200%;
 }
 
-.blue-btn {
-  border-bottom: 4px solid #4447ad;
-  background: linear-gradient(to top, #4447ad 50%, transparent 50%);
+.blue-top {
+  background: linear-gradient(to top, #4447ad calc(50% + 4px), transparent calc(50% - 4px));
+  background-size: 100% 200%;
+}
+
+.red-rgt {
+  background: linear-gradient(to right, #ad4444 calc(50% + 4px), transparent calc(50% - 4px));
+  background-size: 200% 100%;
+}
+
+.yellow-rgt {
+  background: linear-gradient(to right, #c7b24d calc(50% + 4px), transparent calc(50% - 4px));
+  background-size: 200% 100%;
+}
+
+.green-rgt {
+  background: linear-gradient(to right, #3e933f calc(50% + 4px), transparent calc(50% - 4px));
+  background-size: 200% 100%;
+}
+
+.blue-rgt {
+  background: linear-gradient(to right, #4447ad calc(50% + 4px), transparent calc(50% - 4px));
+  background-size: 200% 100%;
 }
 
 .nav-btn {
   text-align: center;
   font-size: 1.3rem;
   padding: 0.6rem 1.5rem 0.5rem 1.5rem;
-  background-size: 100% 200%;
-  background-position: top left;
+  background-position: right top;
   transition: background .2s ease-out;
   margin: 0 0 0 4px;
 }
 
 .nav-btn:hover {
   color: #FFFFFF;
-  background-position: bottom left;
+  background-position: left bottom;
 }
 
 .nav-btn.active {
   color: #FFFFFF;
-  background-position: bottom left;
+  background-position: left bottom;
 }
 
 .social-container {

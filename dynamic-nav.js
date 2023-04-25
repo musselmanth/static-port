@@ -13,6 +13,10 @@ const body = document.querySelector("body");
 const picAndTitle = document.querySelector(".pic-and-title");
 const left = document.querySelector(".left");
 const title = document.querySelector(".title");
+const btn1 = document.querySelector("#btn-1");
+const btn2 = document.querySelector("#btn-2");
+const btn3 = document.querySelector("#btn-3");
+const btn4 = document.querySelector("#btn-4");
 
 let prevScrolled = false;
 let prevFullSize = true;
@@ -50,7 +54,16 @@ const setTopFullSizeStyles = () => {
     btn.style.fontSize = "1.3rem";
     btn.style.textAlign = "center";
     btn.style.margin = "0 0 0 4px";
+    btn.style.transition = "background .2s ease-out";
   });
+  btn1.classList.remove("red-rgt");
+  btn1.classList.add("red-top");
+  btn2.classList.remove("yellow-rgt");
+  btn2.classList.add("yellow-top");
+  btn3.classList.remove("green-rgt");
+  btn3.classList.add("green-top");
+  btn4.classList.remove("blue-rgt");
+  btn4.classList.add("blue-top");
   pageContent.style.marginTop = "115px";
   menuBtn.classList.remove("close");
   showMobileMenu = false;
@@ -88,8 +101,16 @@ const setScrolledFullSizeStyles = () => {
     btn.style.fontSize = "1.3rem";
     btn.style.textAlign = "center";
     btn.style.margin = "0 0 0 4px";
-
+    btn.style.transition = "background .2s ease-out";
   });
+  btn1.classList.remove("red-rgt");
+  btn1.classList.add("red-top");
+  btn2.classList.remove("yellow-rgt");
+  btn2.classList.add("yellow-top");
+  btn3.classList.remove("green-rgt");
+  btn3.classList.add("green-top");
+  btn4.classList.remove("blue-rgt");
+  btn4.classList.add("blue-top");
   pageContent.style.marginTop = "115px";
   menuBtn.classList.remove("close");
   showMobileMenu = false;
@@ -116,7 +137,7 @@ const setMobileStyles = () => {
   nav2.style.marginTop = "65px";
   nav2.style.transform = "translate(0px, -100%)";
   socialContainer.style.flexDirection = "row";
-  socialContainer.style.margin = "20px 20px 80px 20px";
+  socialContainer.style.margin = "20px 20px 20px 20px";
   socialBtns.forEach(btn => {btn.style.width = "70px"});
   navContainer.style.flexDirection = "column";
   navContainer.style.alignItems = "stretch";
@@ -127,8 +148,16 @@ const setMobileStyles = () => {
     btn.style.fontSize = "2rem";
     btn.style.textAlign = "left";
     btn.style.margin = "0 0 10px 0";
-
+    btn.style.transition = "background .3s ease-out";
   });
+  btn1.classList.remove("red-top");
+  btn1.classList.add("red-rgt");
+  btn2.classList.remove("yellow-top");
+  btn2.classList.add("yellow-rgt");
+  btn3.classList.remove("green-top");
+  btn3.classList.add("green-rgt");
+  btn4.classList.remove("blue-top");
+  btn4.classList.add("blue-rgt");
   pageContent.style.marginTop = "50px";
   menuBtn.classList.remove("close");
   showMobileMenu = false;
