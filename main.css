@@ -14,7 +14,6 @@ body {
 
 body a {
   color: white;
-  text-decoration: none;
 }
 
 .page-content {
@@ -163,6 +162,10 @@ body a {
   justify-content: flex-end;
   align-items: flex-end;
   margin: 0 20px 0 0;
+}
+
+.nav-container a {
+  text-decoration: none;
 }
 
 .red-btn {
