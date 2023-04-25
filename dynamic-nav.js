@@ -49,6 +49,7 @@ const setTopFullSizeStyles = () => {
     btn.style.padding = "0.6rem 1.5rem 0.5rem 1.5rem"
     btn.style.fontSize = "1.3rem";
     btn.style.textAlign = "center";
+    btn.style.margin = "0 0 0 4px";
   });
   pageContent.style.marginTop = "115px";
   menuBtn.classList.remove("close");
@@ -86,6 +87,8 @@ const setScrolledFullSizeStyles = () => {
     btn.style.padding = "0.6rem 1.5rem 0.5rem 1.5rem";
     btn.style.fontSize = "1.3rem";
     btn.style.textAlign = "center";
+    btn.style.margin = "0 0 0 4px";
+
   });
   pageContent.style.marginTop = "115px";
   menuBtn.classList.remove("close");
@@ -123,6 +126,8 @@ const setMobileStyles = () => {
     btn.style.padding = "1.6rem 1.5rem 1.5rem 1.5rem";
     btn.style.fontSize = "2rem";
     btn.style.textAlign = "left";
+    btn.style.margin = "0 0 10px 0";
+
   });
   pageContent.style.marginTop = "50px";
   menuBtn.classList.remove("close");
