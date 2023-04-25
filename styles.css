@@ -12,164 +12,18 @@ body {
   flex-direction: column;
 }
 
-.nav-bar {
-  display: none;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #222222;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  width: calc(100% - 40px);
-  top: 0;
-  transition: all 0.5s ease-out;
-  padding: 10px 20px;
-}
-
-.headshot {
-  width: 90px;
-  height: 90px;
-  border-radius: 18%;
-  transition: 0.4s;
-}
-
-.title {
-  align-self: center;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
-}
-
-.name-and-pic {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
-  flex-grow: 5;
-}
-
-.titletext {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding-left: 10px;
-}
-
-.titletext:hover {
-  color: #FFFFFF;
-}
-
-.name {
-  padding: 0;
-  margin: 0;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.role {
-  padding: 0;
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav-links {
-  align-self: flex-end;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-grow: 3;
-  transition: 0.4s;
-  padding-right: 10px;
-}
-
-.nav-bar a {
+body a {
+  color: white;
   text-decoration: none;
-  color: #DDDDDD;
-}
-
-.btn-1 {
-  border-bottom: 4px solid #ad4444;
-  background: linear-gradient(to top, #ad4444 50%, transparent 50%);
-}
-
-.btn-2 {
-  border-bottom: 4px solid #c7b24d;
-  background: linear-gradient(to top, #c7b24d 50%, transparent 50%);
-}
-
-.btn-3 {
-  border-bottom: 4px solid #3e933f;
-  background: linear-gradient(to top, #3e933f 50%, transparent 50%);
-}
-
-.btn-4 {
-  border-bottom: 4px solid #4447ad;
-  background: linear-gradient(to top, #4447ad 50%, transparent 50%);
-}
-
-.nav-button {
-  text-align: center;
-  font-size: 1.3rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-
-  background-size: 100% 200%;
-  background-position: top left;
-  transition: background .2s ease-out;
-
-  margin-left: 4px;
-}
-
-.nav-button:hover {
-  color: #FFFFFF;
-  background-position: bottom left;
-}
-
-.active-btn {
-  color: #FFFFFF;
-  background-position: bottom left;
-}
-
-.social-buttons {
-  align-self: flex-end;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  transition: 0.4s;
-  margin: 0;
-
-}
-
-.social-btn {
-  width: 30px;
-  transition: 0.4s;
-  margin: 6px;
-}
-
-.social-btn svg {
-  fill: #DDDDDD;
-  transition: 0.4s;
-}
-
-.social-btn svg:hover {
-  fill: #78488e;
 }
 
 .page-content {
+  display: none;
   padding: 15px 1.5rem;
   margin-top: 115px;
   flex-grow: 5;
   background-color: #333333;
-}
-
-.page-content a {
-  color: white;
+  z-index: 0;
 }
 
 .footer {
@@ -187,41 +41,187 @@ body {
   padding-right: 1rem;
 }
 
-.mobile-menu {
+
+/* Dynamic NavBar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  display: none;
+  flex-direction: row;
+  width: calc(100% - 20px);
+  padding: 15px 10px;
+  background-color: #222222;
+  z-index: 2;
+}
+
+.navbar a {
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
+.nav-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  flex-grow: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.pic-and-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+}
+
+.pic-and-title:hover {
+  color: #FFFFFF;
+}
+
+.headshot {
+  height: 90px;
+  width: 90px;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin: 0 0 0 20px;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 1.5rem;
+  font-weight:bold;
+}
+
+.menu-btn {
   display: none;
   width: 45px;
   height: 19px;
-  background-color: #333333;
+  background-color: #444444;
+  border-radius: 8px;
   cursor: pointer;
   padding-top: 13px;
-  padding-bottom: 13px;
-  border-radius: 5px;
+  padding-bottom: 13px;  
 }
 
-.mobile-menu:hover {
-  background-color: #444444;
+.menu-btn:hover {
+  background-color: #555555;
 }
 
-.btn-line {
+.menu-line {
   width: 28px;
   height: 3px;
   background: #CCCCCC;
   margin: 0 auto 5px auto;
-  transition: all 0.5s ease-out;
+  transition: all 0.2s ease-out;
 }
 
-.mobile-menu.close {
+.menu-btn.close {
   transform: rotate(180deg);
 }
 
-.mobile-menu.close .btn-line:nth-child(1) {
+.menu-btn.close .menu-line:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
 
-.mobile-menu.close .btn-line:nth-child(2) {
+.menu-btn.close .menu-line:nth-child(2) {
   opacity: 0;
 }
 
-.mobile-menu.close .btn-line:nth-child(3) {
+.menu-btn.close .menu-line:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -6px);
 }
+
+.nav-2 {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 5;
+  transition: all 0.3s ease-out;
+  z-index: 1;
+  background-color: #222222;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 5;
+  transition: 0.4s;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0 20px 0 0;
+}
+
+.red-btn {
+  border-bottom: 4px solid #ad4444;
+  background: linear-gradient(to top, #ad4444 50%, transparent 50%);
+}
+
+.yellow-btn {
+  border-bottom: 4px solid #c7b24d;
+  background: linear-gradient(to top, #c7b24d 50%, transparent 50%);
+}
+
+.green-btn {
+  border-bottom: 4px solid #3e933f;
+  background: linear-gradient(to top, #3e933f 50%, transparent 50%);
+}
+
+.blue-btn {
+  border-bottom: 4px solid #4447ad;
+  background: linear-gradient(to top, #4447ad 50%, transparent 50%);
+}
+
+.nav-btn {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 0.6rem 1.5rem 0.5rem 1.5rem;
+  background-size: 100% 200%;
+  background-position: top left;
+  transition: background .2s ease-out;
+  margin-left: 4px;
+}
+
+.nav-btn:hover {
+  color: #FFFFFF;
+  background-position: bottom left;
+}
+
+.nav-btn.active {
+  color: #FFFFFF;
+  background-position: bottom left;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.social-btn {
+  width: 35px;
+  padding: 5px;
+}
+
+.social-btn svg {
+  fill: #CCCCCC;
+}
+
+.social-btn svg:hover {
+  fill: #FFFFFF;
+}
+
+

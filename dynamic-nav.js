@@ -1,125 +1,159 @@
-let showMenu = false;
-
-const socialButtons = document.querySelector(".social-buttons");
-const socialBtns = document.querySelectorAll(".social-btn");
+const navbar = document.querySelector(".navbar");
 const headshot = document.querySelector(".headshot");
 const role = document.querySelector(".role");
-const navBar = document.querySelector(".nav-bar");
-const navLinks = document.querySelector(".nav-links");
-const mobileMenu = document.querySelector(".mobile-menu");
-const title = document.querySelector(".title");
+const menuBtn = document.querySelector(".menu-btn");
+const nav1 = document.querySelector(".nav-1");
+const nav2 = document.querySelector(".nav-2");
+const socialContainer = document.querySelector(".social-container");
+const socialBtns = document.querySelectorAll(".social-btn");
+const navContainer = document.querySelector(".nav-container");
+const navBtns = document.querySelectorAll(".nav-btn");
 const pageContent = document.querySelector(".page-content");
+const body = document.querySelector("body");
+const picAndTitle = document.querySelector(".pic-and-title");
+const left = document.querySelector(".left");
+const title = document.querySelector(".title");
 
-const navStateHandler = () => {
+let prevScrolled = false;
+let prevFullSize = true;
+let showMobileMenu = false;
+
+const setTopFullSizeStyles = () => {
+  navbar.style.flexDirection = "row";
+  navbar.style.padding = "15px 10px";
+  picAndTitle.style.flexDirection = "row";
+  left.style.justifyContent = "flex-start";
+  title.style.margin = "0 0 0 20px";
+  headshot.style.width = "90px";
+  headshot.style.height = "90px";
+  role.style.display = "inline";
+  menuBtn.style.display = "none";
+  nav1.style.flexDirection = "row";
+  nav2.style.flexDirection = "row";
+  navbar.appendChild(nav2);
+  nav2.style.position = "static";
+  nav2.style.top = "";
+  nav2.style.left = "";
+  nav2.style.width = "";
+  nav2.style.height = "";
+  nav2.style.marginTop = "";
+  nav2.style.transform = "";
+  socialContainer.style.flexDirection = "column";
+  socialContainer.style.margin = "";
+  socialBtns.forEach(btn => {btn.style.width = "35px"});
+  navContainer.style.flexDirection = "row";
+  navContainer.style.alignItems = "flex-end";
+  navContainer.style.margin = "0 20px 0 0";
+  navContainer.style.justifyContent = "flex-end";
+  navBtns.forEach(btn => {btn.style.padding = "0.6rem 1.5rem 0.5rem 1.5rem"});
+  pageContent.style.marginTop = "115px";
+  menuBtn.classList.remove("close");
+  showMobileMenu = false;
+};
+
+const setScrolledFullSizeStyles = () => {
+  navbar.style.flexDirection = "row";
+  navbar.style.padding = "10px";
+  headshot.style.width = "45px";
+  headshot.style.height = "45px";
+  picAndTitle.style.flexDirection = "row";
+  left.style.justifyContent = "flex-start";
+  title.style.margin = "0 0 0 20px";
+  role.style.display = "none";
+  menuBtn.style.display = "none";
+  nav1.style.flexDirection = "row";
+  nav2.style.flexDirection = "row";
+  navbar.appendChild(nav2);
+  nav2.style.position = "static";
+  nav2.style.top = "";
+  nav2.style.left = "";
+  nav2.style.width = "";
+  nav2.style.height = "";
+  nav2.style.marginTop = "";
+  nav2.style.transform = "";
+  socialContainer.style.flexDirection = "row";
+  socialContainer.style.margin = "";
+  socialBtns.forEach(btn => {btn.style.width = "35px"});
+  navContainer.style.flexDirection = "row";
+  navContainer.style.alignItems = "flex-end";
+  navContainer.style.margin = "0 20px 0 0";
+  navContainer.style.justifyContent = "flex-end";
+  navBtns.forEach(btn => {btn.style.padding = "0.6rem 1.5rem 0.5rem 1.5rem"});
+  pageContent.style.marginTop = "115px";
+  menuBtn.classList.remove("close");
+  showMobileMenu = false;
+};
+
+const setMobileStyles = () => {
+  navbar.style.flexDirection = "column";
+  navbar.style.padding = "10px";
+  headshot.style.width = "45px";
+  headshot.style.height = "45px";
+  picAndTitle.style.flexDirection = "row-reverse";
+  left.style.justifyContent = "flex-end";
+  title.style.margin = "0 20px 0 0";
+  role.style.display = "none";
+  menuBtn.style.display = "inline";
+  nav1.style.flexDirection = "row-reverse";
+  nav2.style.flexDirection = "column";
+  body.appendChild(nav2);
+  nav2.style.position = "fixed";
+  nav2.style.top = "0";
+  nav2.style.left = "0";
+  nav2.style.width = "100%";
+  nav2.style.height = "calc(100vh - 65px)";
+  nav2.style.marginTop = "65px";
+  nav2.style.transform = "translate(0px, -100%)";
+  socialContainer.style.flexDirection = "row";
+  socialContainer.style.margin = "20px";
+  socialBtns.forEach(btn => {btn.style.width = "70px"});
+  navContainer.style.flexDirection = "column";
+  navContainer.style.alignItems = "stretch";
+  navContainer.style.margin = "20px 20px 20px 20px";
+  navContainer.style.justifyContent = "flex-start";
+  navBtns.forEach(btn => {btn.style.padding = "1.6rem 1.5rem 1.5rem 1.5rem"});
+  pageContent.style.marginTop = "50px";
+  menuBtn.classList.remove("close");
+  showMobileMenu = false;
+}
+
+const navAdjust = () => {
   const scrolled = (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80);
   const fullSize = window.innerWidth > 975;
 
-  if (!scrolled && fullSize) {
-    socialButtons.style.flexDirection = "column";
-    socialButtons.style.display = "flex";
-    socialButtons.style.margin = "0";
-
-    // for (btn of socialBtns) { btn.style.width = "30px"; }
-    socialBtns.forEach((btn) => {btn.style.width = "30px"});
-
-    role.style.display = "inline";
-    title.style.alignSelf = "center";
-
-    headshot.style.width = "90px";
-    headshot.style.height = "90px";
-
-    mobileMenu.style.display = "none";
-
-    navBar.style.padding = "10px 20px";
-    navBar.style.width = "calc(100% - 40px)";
-    navBar.style.flexDirection = "row";
-    
-    navLinks.style.display = "flex";
-    navLinks.style.flexDirection = "row";
-    navLinks.style.alignSelf = "flex-end";
-    navLinks.style.alignItems = "flex-end";
-    navLinks.style.padding = "0 10px 0 0";
-
-    pageContent.style.marginTop = "115px";
-
-  } else if (scrolled && fullSize) {
-
-    console.log("scrolled and full size")
-    socialButtons.style.flexDirection = "row";
-    socialButtons.style.display = "flex";
-    socialButtons.style.margin = "0";
-
-    socialBtns.forEach((btn) => {btn.style.width = "30px"});
-    
-    role.style.display = "none";
-    title.style.alignSelf = "center";
-    
-    headshot.style.width = "45px";
-    headshot.style.height = "45px";
-    
-    mobileMenu.style.display = "none";
-    navBar.style.padding = "5px 10px";
-    navBar.style.width = "calc(100% - 20px)";
-    navBar.style.flexDirection = "row";
-    
-    navLinks.style.display = "flex";
-    navLinks.style.flexDirection = "row";
-    navLinks.style.alignSelf = "flex-end";
-    navLinks.style.alignItems = "flex-end";
-    navLinks.style.padding = "0 10px 0 0";
-
-    pageContent.style.marginTop = "115px";
-
-  } else { //not fullSize
-
-    socialButtons.style.flexDirection = "row";
-    socialButtons.style.display = "none";
-    socialButtons.style.margin = "10px 0 0 0";
-
-    socialBtns.forEach((btn) => {btn.style.width = "60px"});
-    
-    role.style.display = "none";
-    title.style.alignSelf = "stretch";
-    
-    headshot.style.width = "45px";
-    headshot.style.height = "45px";
-    
-    mobileMenu.style.display = "inline";
-    
-    navBar.style.padding = "5px 10px";
-    navBar.style.width = "calc(100% - 20px)";
-    navBar.style.flexDirection = "column";
-    
-    navLinks.style.display = "none";
-    navLinks.style.flexDirection = "column";
-    navLinks.style.alignSelf = "stretch";
-    navLinks.style.alignItems = "stretch";
-    navLinks.style.padding = "45px 10px 30px 0";
-
-    pageContent.style.marginTop = "50px";
-
-    mobileMenu.classList.remove("close");
-    showMenu = false;
+  if ((!scrolled && fullSize) && (prevScrolled || !prevFullSize)) {
+    setTopFullSizeStyles();
+  } else if ((scrolled && fullSize) && (!prevScrolled || !prevFullSize)) { 
+    setScrolledFullSizeStyles();
+  } else if (!fullSize && prevFullSize) {
+    setMobileStyles();
   }
 
+  prevScrolled = scrolled;
+  prevFullSize = fullSize;
 };
 
 const toggleMenu = () => {
-  if (showMenu) {
-    navLinks.style.display = "none";
-    socialButtons.style.display = "none";
-    mobileMenu.classList.remove("close");
-    showMenu = false;
+  if (showMobileMenu) {
+    showMobileMenu = false;
+    nav2.style.transform = "translate(0px, -100%)";
+    menuBtn.classList.remove("close");
   } else {
-    navLinks.style.display = "flex";
-    socialButtons.style.display = "flex";
-    mobileMenu.classList.add("close");
-    showMenu = true;
+    showMobileMenu = true;
+    nav2.style.transform = "";
+    menuBtn.classList.add("close");
   }
-};
+}
 
-window.onscroll = navStateHandler;
-window.onresize = navStateHandler;
+navAdjust();
+navbar.style.display = "flex";
+pageContent.style.display = "inline";
 
-navStateHandler();
-navBar.style.display = "flex";
+window.onscroll = navAdjust;
+window.onresize = navAdjust;
+
+
+
+
+
+
