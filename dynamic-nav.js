@@ -105,7 +105,7 @@ const setMobileStyles = () => {
   nav2.style.marginTop = "65px";
   nav2.style.transform = "translate(0px, -100%)";
   socialContainer.style.flexDirection = "row";
-  socialContainer.style.margin = "20px";
+  socialContainer.style.margin = "20px 20px 80px 20px";
   socialBtns.forEach(btn => {btn.style.width = "70px"});
   navContainer.style.flexDirection = "column";
   navContainer.style.alignItems = "stretch";
