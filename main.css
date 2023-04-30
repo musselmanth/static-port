@@ -75,7 +75,7 @@ body a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  align-self: center;
+  height: 100%;
 }
 
 .pic-and-title:hover,
