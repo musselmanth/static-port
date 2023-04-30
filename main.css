@@ -78,7 +78,8 @@ body a {
   align-self: center;
 }
 
-.pic-and-title:hover {
+.pic-and-title:hover,
+.pic-and-title:focus-visible {
   color: #FFFFFF;
 }
 
@@ -117,7 +118,8 @@ body a {
   padding-bottom: 13px;  
 }
 
-.menu-btn:hover {
+.menu-btn:hover,
+.menu-btn:focus-visible {
   background-color: #555555;
 }
 
@@ -217,7 +219,8 @@ body a {
   margin: 0 0 0 4px;
 }
 
-.nav-btn:hover {
+.nav-btn:hover,
+.nav-btn:focus-visible {
   color: #FFFFFF;
   background-position: left bottom;
 }
