@@ -182,11 +182,13 @@ const navAdjust = () => {
 const toggleMenu = () => {
   if (showMobileMenu) {
     showMobileMenu = false;
+    nav2.style.overflow = "hidden"
     nav2.style.transform = "translateY(-100%)";
     menuBtn.classList.remove("close");
   } else {
     showMobileMenu = true;
     nav2.style.transform = "";
+    nav2.style.overflow = "scroll"
     menuBtn.classList.add("close");
   }
 }
