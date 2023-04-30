@@ -135,7 +135,7 @@ const setMobileStyles = () => {
   nav2.style.width = "100%";
   nav2.style.height = "calc(100dvh - 65px)";
   nav2.style.marginTop = "65px";
-  nav2.style.transform = "translate(0px, -100dvh)";
+  nav2.style.transform = "translateY(-100%)";
   socialContainer.style.flexDirection = "row";
   socialContainer.style.margin = "20px 20px 20px 20px";
   socialBtns.forEach(btn => {btn.style.width = "70px"});
@@ -182,7 +182,7 @@ const navAdjust = () => {
 const toggleMenu = () => {
   if (showMobileMenu) {
     showMobileMenu = false;
-    nav2.style.transform = "translate(0px, -100dvh)";
+    nav2.style.transform = "translateY(-100%)";
     menuBtn.classList.remove("close");
   } else {
     showMobileMenu = true;

@@ -154,6 +154,7 @@ body a {
   transition: all 0.3s ease-out;
   z-index: 1;
   background-color: #222222;
+  overflow: hidden;
 }
 
 .nav-container {
