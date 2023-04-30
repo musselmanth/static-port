@@ -133,7 +133,7 @@ const setMobileStyles = () => {
   nav2.style.top = "0";
   nav2.style.left = "0";
   nav2.style.width = "100%";
-  nav2.style.height = "calc(100vh - 65px)";
+  nav2.style.height = "calc(100dvh - 65px)";
   nav2.style.marginTop = "65px";
   nav2.style.transform = "translate(0px, -100%)";
   socialContainer.style.flexDirection = "row";
